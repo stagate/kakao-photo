@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>사진</title>
+  <meta name="description" content="사진 미리보기">
+
+  <!-- 카카오톡 등 메신저의 링크 미리보기용 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="사진">
+  <meta property="og:description" content="사진을 눌러보세요.">
+  <meta property="og:image" content="preview.jpg">
+  <meta property="og:url" content="./">
+
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      background: #111;
+      padding: 16px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    img {
+      display: block;
+      width: min(100%, 900px);
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.35);
+    }
+  </style>
+</head>
+<body>
+  <img src="preview.jpg" alt="사진">
+</body>
+</html>
